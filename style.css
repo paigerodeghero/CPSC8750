@@ -8,7 +8,8 @@ h1 {
   font-size: 40px;
 }
 
-p {
-  font-family: white;
+p { 
+  color: white;
   font-size: 35px;
+  text-align: center;
 }
