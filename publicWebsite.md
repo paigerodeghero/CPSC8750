@@ -14,7 +14,7 @@ This process should also have installed npm, which you can confirm by running `n
 
 ## Starting Your Project
 
-Make a new public github project titled "cuid-cpsc8750" (swapping "cuid" for your Clemson user id (CU ID)). It would be helpful when creating it to set the .gitignore file option to "Node."
+Make a new public github project titled "clemsonUsername-cpsc8750" (swapping "clemsonUsername" for your Clemson username). It would be helpful when creating it to set the .gitignore file option to "Node."
 
 Download the project locally and open the folder in your terminal.
 
@@ -89,7 +89,7 @@ flyctl auth signup
 
 You do not need to input a credit card, when asked just click the link for trying fly.io for free.
 
-In the [fly.io dashboard](https://fly.io/dashboard), make a new organization titled `clemson-yourcpuid`. We will use this later.
+In the [fly.io dashboard](https://fly.io/dashboard), make a new organization titled `clemson-clemsonUsername`. We will use this later.
 
 Navigate to your repository within a terminal. We are going to run commands within the project.
 
@@ -116,7 +116,7 @@ Open up package.json. In the "scripts" object, add a "start" field with value "n
 
 Great, we have added the "start" command. From now on, instead of manually typing `node src/server.js` we can run `npm start` when we wish to run the server locally.
 
-Now fly.io has enough information to engage with their system. Run the `flyctl launch` command, and choose your `clemson-yourcpuid` organization (do not use `personal`, as that will not be published publicly).
+Now fly.io has enough information to engage with their system. Run the `flyctl launch` command, and choose your `clemson-clemsonUsername` organization (do not use `personal`, as that will not be published publicly).
 
 Choose any region to host your code, they all work, but the closer the region is to you, the faster it will load your webpage.
 
