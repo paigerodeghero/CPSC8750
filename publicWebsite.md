@@ -1,4 +1,4 @@
-# Dynamic Website
+# Making a Public Website with Express.js
 
 We've covered, at a high-level, the MERN stack; this lab is about running through the -E-N sections in practice.
 
@@ -14,13 +14,13 @@ This process should also have installed npm, which you can confirm by running `n
 
 ## Starting Your Project
 
-Make a new github project titled "cuid-cpsc8750" (swapping "cuid" for your Clemson user id (CU ID)). It would be helpful when creating it to set the .gitignore file option to "Node."
+Make a new public github project titled "cuid-cpsc8750" (swapping "cuid" for your Clemson user id (CU ID)). It would be helpful when creating it to set the .gitignore file option to "Node."
 
-Download the project locally and open open the folder in your terminal.
+Download the project locally and open the folder in your terminal.
 
-Run `npm init`. This will take you through a series of questions. The default answer (the value in parentheses) is good enough for the package name, version, and description.
+Run `npm init`. This will take you through a series of question prompts in the terminal. The default answer (the value in parentheses) is good enough for the package name, version, and description. To select the default answer, simply hit enter.
 
-Set your entrypoint to src/index.js.
+Set your entrypoint to src/index.js (we will make that file in a later assignment).
 
 Otherwise, fill in whatever you like for the remaining questions (you can leave the "test command" response empty, as we will not have tests for this program).
 
@@ -32,7 +32,12 @@ Express.js is a server library written for node environments. To add it to your 
 
 You should see the command run and download express, along with all its dependencies (and all its dependencies' dependencies). It is now usable within the codebase!
 
-Create a folder in your project to hold your javascript source called `src`. Create a new file in that folder called `server.js`.
+Create a folder in your project to hold your javascript source called `src`. Create a new file in that folder called `server.js`. This can be done in the command line with the following three commands:
+```
+mkdir src
+touch src/server.js
+open src/server.js
+```
 
 Copy this code into server.js:
 ```js
@@ -84,13 +89,13 @@ flyctl auth signup
 
 You do not need to input a credit card, when asked just click the link for trying fly.io for free.
 
-In the fly.io dashboard, make a new organization titled `clemson-yourcpuid`. We will use this later.
+In the [fly.io dashboard](https://fly.io/dashboard), make a new organization titled `clemson-yourcpuid`. We will use this later.
 
 Navigate to your repository within a terminal. We are going to run commands within the project.
 
-But first, in order to make fly.io aware of how to run our project, we will first need to add a "start" command.
+But first, in order to make fly.io aware of how to run our project, we will need to add a "start" command.
 
-Open up package.json. In the scripts object, add a "start" field with value "node src/server.js". If you haven't changed package.json, the result should look something like this:
+Open up package.json. In the "scripts" object, add a "start" field with value "node src/server.js". The resulting package.json should look something like this:
 ```
 {
   "name": "some-project-name",
@@ -111,6 +116,14 @@ Open up package.json. In the scripts object, add a "start" field with value "nod
 
 Great, we have added the "start" command. From now on, instead of manually typing `node src/server.js` we can run `npm start` when we wish to run the server locally.
 
-Now fly.io has enough information to engage with their system. Run the `fly launch` command, and choose your `clemson-yourcpuid` organization.
+Now fly.io has enough information to engage with their system. Run the `flyctl launch` command, and choose your `clemson-yourcpuid` organization (do not use `personal`, as that will not be published publicly).
 
-Note that fly.io can take a while to get launched, but if all goes correctly, you now have a website with a custom js server in the world-wide-web.
+Choose any region to host your code, they all work, but the closer the region is to you, the faster it will load your webpage.
+
+Do not set up a Postgresql database at this point. (type no, or just n).
+
+Select deploy now! (type yes, or just y).
+
+Note that fly.io can take a while to get launched, but if all goes correctly, you now have a website with a custom js server in the world-wide-web! To visit your website, run `flyctl open`.
+
+If you get stuck at any point setting up fly.io, or want to experiment with it on your own, they provide a nice [tutorial](https://fly.io/docs/languages-and-frameworks/node/) that gives additional information.
