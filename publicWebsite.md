@@ -89,8 +89,6 @@ flyctl auth signup
 
 You do not need to input a credit card, when asked just click the link for trying fly.io for free.
 
-In the [fly.io dashboard](https://fly.io/dashboard), make a new organization titled `clemson-clemsonUsername`. We will use this later.
-
 Navigate to your repository within a terminal. We are going to run commands within the project.
 
 But first, in order to make fly.io aware of how to run our project, we will need to add a "start" command.
@@ -116,7 +114,7 @@ Open up package.json. In the "scripts" object, add a "start" field with value "n
 
 Great, we have added the "start" command. From now on, instead of manually typing `node src/server.js` we can run `npm start` when we wish to run the server locally.
 
-Now fly.io has enough information to engage with their system. Run the `flyctl launch` command, and choose your `clemson-clemsonUsername` organization (do not use `personal`, as that will not be published publicly).
+Now fly.io has enough information to engage with their system. Run the `flyctl launch` command, and choose the name `clemson-clemsonUsername`.
 
 Choose any region to host your code, they all work, but the closer the region is to you, the faster it will load your webpage.
 
