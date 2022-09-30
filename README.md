@@ -1,3 +1,3 @@
-# 8750 ToDos List
+# CPSC 8750 Fall 2022
 
-## Project Part A Instructions
+## Assignments & Labs
