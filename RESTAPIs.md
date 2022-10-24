@@ -8,10 +8,14 @@
 3. Find and example of request and response
 4. Determine if it complies with the constraints of REST (if the API requires authentication, note that and determine if the constraints are met given the authentication)
 5. Create a PowerPoint presentation with the below template: 
-	a. Slide 1: What API were you assigned and what does it do?
-	b. Slide 2: Example request and response
-	c. Slide 3: Which constraints it satisfies
-	d. Slide 4. Is it RESTful?
+	  
+	  a. Slide 1: What API were you assigned and what does it do?
+	  
+	  b. Slide 2: Example request and response
+	  
+	  c. Slide 3: Which constraints it satisfies
+	  
+	  d. Slide 4. Is it RESTful?
 6. Save PowerPoint to "Files" in the class's "General" channel 
 
 
@@ -21,9 +25,13 @@
 2. Stateless server
 3. Cache
 4. Uniform interface
+
 	a. Identification of resources
+	
 	b. Manipulation of resources through representations
+	
 	c. Self-descriptive messages
+	
 	d. Hypermedia as the engine of application state
 5. Layered System
 6. Code-on-demand (optional)
@@ -65,4 +73,4 @@ Video from the previous lecture: https://www.youtube.com/watch?v=6UXc71O7htc&t=1
 
 10. skyscanner: https://developers.skyscanner.net/docs/intro
 
-11. twitter api: https://developers.skyscanner.net/docs/intro
+11. twitter api: https://developer.twitter.com/en/docs/twitter-api
