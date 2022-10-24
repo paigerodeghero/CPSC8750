@@ -16,7 +16,7 @@
 	  c. Slide 3: Which constraints it satisfies
 	  
 	  d. Slide 4. Is it RESTful?
-6. Save PowerPoint to "Files" in the class's "General" channel 
+6. Save PowerPoint to MSFT Teams General channel --> "Files" -->  "RESTful APIs Group PowerPoints"
 
 
 ## Reminder from last lecture
