@@ -19,7 +19,7 @@
 6. Save PowerPoint to MSFT Teams General channel --> "Files" -->  "RESTful APIs Group PowerPoints"
 
 
-## Reminder from last lecture
+## Review from last lecture
 **The Constraints of REST:**
 1. Client-server
 2. Stateless server
