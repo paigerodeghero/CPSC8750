@@ -5,5 +5,6 @@
 2. [Cookies](/cookies.md)
 3. [Dynamic Website - Assignment included](dynamicWebsite.md)
 4. [REST APIs](RESTAPIs.md)
-5. [API layer](APIlayer.md)
+5. [REST API Notes](RESTAPIsNotes.md)
+6. [API layer](APIlayer.md)
 
