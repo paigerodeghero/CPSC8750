@@ -3,5 +3,7 @@
 ## Notes & Assignments 
 1. [Make a public website with fly.io - Assignment included](/publicWebsite.md)
 2. [Cookies](/cookies.md)
-3. [Dyanmic Website - Assignment included](dynamicWebsite.md)
+3. [Dynamic Website - Assignment included](dynamicWebsite.md)
+4. [REST APIs](RESTAPIs.md)
+5. [API layer](APIlayer.md)
 
