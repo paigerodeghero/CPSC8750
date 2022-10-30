@@ -128,9 +128,9 @@ app.get("/trivia", async (req, res) => {
   const content = await response.json();
 
   // fail if db failed
-  if (data.response_code !== 0) {
+  if (content.response_code !== 0) {
     res.status(500);
-    res.send(`Open Trivia Database failed with internal response code ${data.response_code}`);
+    res.send(`Open Trivia Database failed with internal response code ${content.response_code}`);
     return;
   }
 
