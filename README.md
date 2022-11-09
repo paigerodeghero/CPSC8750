@@ -7,4 +7,5 @@
 4. [REST APIs](RESTAPIs.md)
 5. [REST API Notes](RESTAPIsNotes.md)
 6. [API layer](APIlayer.md)
+7. [JS HTML](JSHTML.md)
 
